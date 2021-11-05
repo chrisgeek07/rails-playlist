@@ -10,11 +10,16 @@ class PlaylistsController < ApplicationController
   def create
     @playlist = Playlist.new(playlist_params)
     if @playlist.save
-      redirect_to @playlists_path
+      redirect_to playlists_path
     else
       render :new
     end
   end
+
+  def edit
+    @playlist = Playlist.find(params[:id])
+  end
+
 
   private
 
