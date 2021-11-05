@@ -32,7 +32,6 @@ class PlaylistsController < ApplicationController
     redirect_to playlists_path
   end
 
-
   private
 
   def playlist_params
