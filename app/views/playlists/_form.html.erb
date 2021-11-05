@@ -2,7 +2,7 @@
   <%= f.input :name %>
   <%= f.input :genre %>
   <%= f.input :description, as: :text%>
-  <%= f.input :photo, as: :file, class: 'btn btn-outline-success' %>
+  <%= f.input :photo, as: :file %>
   <%= f.button :submit, class: 'btn btn-outline-primary'%>
   <%= link_to 'Cancel', playlists_path, class: 'btn btn-danger'%>
 <% end %>
